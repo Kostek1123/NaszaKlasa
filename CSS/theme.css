@@ -1,0 +1,25 @@
+body{
+    background-color: #0f0e20;
+    color: #d9d7f1;
+    font-family:monospace;
+}
+
+mark{
+    background-color: #d9d7f1;
+    color: #0f0e20;
+}
+
+a{
+    color: #afa0f8;
+}
+
+hr{
+    background-color: #afa0f8;
+    height: 4px;
+}
+
+th, td{
+    background-color: #090814;
+    border-radius: 10px;
+    padding: 5px;
+}
