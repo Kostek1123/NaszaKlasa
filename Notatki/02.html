@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let firstName = "Aleksandra";
+        document.write(firstName);
+
+        //var lastName = "Sienkiewicz"; -- jest to stary sposób deklaracji zmiennych, nie należy go już stosować
+
+        let lastName = "Sienkiewicz";
+        document.write(" " + lastName);
+        
+        document.write("<br>" + firstName + " " + lastName);
+        //let firstName = "Aśka"; -- błąd, ponowna deklaracja tej samej zmiennej 
+
+        firstName = "Marcelina";
+        document.write("<br>" + firstName + " " + lastName);
+
+        const wartosc = 3.14; // definicja stałej
+        document.write("Pole koła o promieniu 2 wynosi:" + wartosc * 2 * 2 );
+
+        //wartosc = 2.22 -- błąd, próba zmiany wartości stałej
+        let a_1 = 23;
+        let a_2 = 1.2345;
+        let a_3 = "23.14";
+        console.log(a_1);
+        console.log(typeof a_1);
+        console.log(a_2.toFixed()); //zaokrąglenie do całkowitej
+        console.log(a_2.toFixed(2)); //zaokrąglenie do części setnej
+        console.log(typeof a_2);
+        console.log(a_3);
+        console.log(typeof a_3);
+
+        const a_4 = a_3 * 1; // stara metoda zmiany stringa na number
+        console.log(a_4);
+        console.log(typeof a_4);
+
+        let a_5 = parseInt(a_3); // Nowa metoda zmiany stringa na number
+        console.log(a_5);
+        console.log(typeof a_5);
+
+        let a_6 = parseFloat(a_3); //Zmiana stringa na rzeczywistą
+        console.log(a_6);
+        console.log(typeof a_6);
+
+        const a_7 = 1234;
+        const a_8 = "abcd";
+        // const a_9; -- błąd, stała musi mieć przypisaną wartość
+        let a_9;
+
+        console.log(a_7);
+        console.log(a_8);
+        console.log(a_9);
+        a_6 = "qwerty";
+        console.log(a_6);
+        console.log(typeof a_6);
+
+        document.write("<bt>");
+        document.write(a_6);
+        document.write("<br>");
+        document.write(a_6.lenght);
+        document.write("<br>");
+        document.write(a_6.toUpperCase()); 
+        const napis = "Każde czerwone auto jeździ szybciej!";
+        console.log(napis);
+        console.log(napis.length);
+        console.log(napis[2]) // wypisanie trzeciego znaku z napisu (numer +1)
+        console.log(napis.at(0));
+        console.log(napis.at(-2)); // od końca
+        console.log(napis.charAt(1)) // tylko dodatnie
+        console.log(napis.toLowerCase());
+        console.log(napis.slice(25));
+
+
+    </script>
+</body>
+</html>

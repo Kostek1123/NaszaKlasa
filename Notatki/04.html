@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //document.write(2 == '2'); //równe
+        document.write("<br>");
+        //document.write(2 === '2'); //ientyczne - różne typy
+        document.write("<br>");
+        //prompt - okieko do wprowadzania danych
+        //parseInt - wymuszenie typu, bo wszystko z promta to napisy
+        let liczba= parseInt(prompt("Podaj jakąś liczbe:"));
+        console.log(liczba);
+        console.log(typeof liczba);
+        if(liczba < 10)
+            document.write("Podałeś liczbe mniejszą niż 10")
+        document.write("<br>");
+        //warunek pełny
+        if (liczba == 10)
+            document.write("Twoja liczba jest równa 10")
+        else
+            document.write("Twoja liczba jest różna od 10")
+        document.write("<br>");
+        if (liczba === 10)
+            document.write("Twoja liczba jest równa 10")
+        else
+            document.write("Twoja liczba jest różna od 10")
+        if(liczba < 10)
+        {
+            document.write("Podałeś liczbe mniejszą niż 10")
+            document.write("Podałeś liczbe mniejszą niż 10")
+            document.write("Podałeś liczbe mniejszą niż 10")
+            document.write("Podałeś liczbe mniejszą niż 10")
+        }
+    </script>
+</body>
+</html>

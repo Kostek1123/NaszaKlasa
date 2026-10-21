@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knur</title>
+</head>
+<body>
+    <script>
+        document.write("<h1>To jest mój pierwszy skrypt</h1>");
+        //komentarz do końca lini
+        /*
+            komentarz wielo
+            liniowy
+            alert("To jest taki komunikat kontrolny");
+          confirm("dokonaj prostego wyboru"); //wybór TAK NIE
+           prompt("Wprowadź jakiś tekst: ")
+        */      
+        document.write('<p>A to jest ciąg dalszy.</p>');
+        console.log("A teraz próba komunikacji do konsoli");  
+        
+        let imie; //deklaracja zmiennej
+        let imie2 = "Tadeusz"; //definicja zmiennej, dejkaracja z przypisaniem wartości
+        imie2 = "Małgorzata";
+        /*
+        imie = prompt("Podaj swoje imię")
+        document.write(imie);
+        */
+       alert("Witam Cię " + prompt("Jak się nazywasz?", "Tu wpisz swoje imię."));
+       document.write("To jest pierwsza liinijka. A to jest druga linijka. No i trzecia linija. No i mogę sobie coś tam pisać. A przeglądarka sama podzieli na linijk aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
+       document.write(`To jest pierwsza liinijka.
+        A to jest druga linijka.
+        No i trzecia linija.
+        No i mogę sobie coś tam pisać.
+        A przeglądarka sama podzieli na linijk`)
+    </script>
+</body>
+</html>
