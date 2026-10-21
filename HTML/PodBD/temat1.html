@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Definicje</title>
+    <link rel="stylesheet" href="../../CSS/theme.css">
+</head>
+
+<body>
+    <h1>Definicje baz danych</h1>
+
+    <hr>
+
+    <h3>Podstawowe definicje:</h3>
+    <ul>
+        <li>
+            <b>Baza danych</b> - to <mark>zorganizowany zbiór danych</mark>  <mark>o określonej dziedzinie tematycznej</mark> <mark>uporządkowanych tak, aby ułatwić do nich dostęp.</mark>
+        </li>
+
+        <li>
+            <b>System zarządzania bazą danych</b> - to program <mark>zarządzający danymi w bazie</mark> i <mark>umożliwiający ich przetwarzanie</mark>
+        </li>
+
+        <li>
+            <b>System baz danych</b> - to <mark>baza danych i system zarządzania bazą.</mark>
+        </li>
+
+        <li>
+            <b>Encja</b> - to każdy przedmiot stan, lub pojęcie, czyli <mark>każdy przedmiot, który potrafimy odróżnić od innych obiektów,</mark>
+            np. osoba, samochód, mebel, książka.
+        </li>
+
+        <li>
+            <b>Atrybut</b> - to <mark>cechy określające encje</mark> wynikające <mark>z ich natury</mark>, np. nazwisko, kolor.
+        </li>
+
+        <li>
+            <b>Dziedzina</b> - to <mark>wartości atrybutów</mark>, np. Kowalski, zielony.
+        </li>
+
+        <li>
+            <b>Klucz podstawowy/główny</b> - to <mark>minimalna kombinacja</mark> pól <mark>identyfikująca każdy rekord w tabeli</mark> w sposób <mark>jednoznaczny</mark>. 
+        </li>
+
+        <li>
+            <b>Klucz sztuczny</b> - to <mark>jedno lub więcej pól tabeli</mark>, które <mark>odwołują się do pola lub pól klucza podstawowego w innej tabeli</mark>.
+        </li>
+
+        <li>
+            <b>Relacja (związek)</b> - <mark>to powiązanie między dwoma zbiorami encji.</mark> <mark>Każdy związek ma dwa końce, do których są przypisane atrybuty:</mark>
+            <p style="font-size: small;">
+                - nazwa oraz kierunek, <br>
+                - stopień związku(typ), <br>
+                - wymaganie lub opcjonalność związku.
+            </p>
+        </li>
+    </ul>
+
+    <hr>
+
+    <h3>Modele baz danych</h3>
+
+    <p>Na model danych składa się:</p>
+
+    <ul>
+        <li><b>struktura</b> - czyli opis sposobu przechowywania obiektów (encji) modelowanego wycinka świata oraz ich związków,</li>
+        <li><b>ograniczenia</b> - reguły kontrolujące spójność i poprawność danych,</li>
+        <li><b>operacje</b> - zbiór działań które umożliwiają dostęp do struktur.</li>
+    </ul>
+
+    <p>Modele baz danych:</p>
+    <ul>
+        <li>
+            <b>Hierarchiczny</b> - w tym modelu przechowywane dane są zogranizowane w postaci drzewa. Informacja jest zawarta w dokumentach oraz w strukturze drzewa (podobnej do drzewa folderów na dysku komputera). <br>
+            <a href="modelHierarchiczny.png"><img src="modelHierarchiczny.png" alt="Wizualizacja modelu hierarchicznego." title="Model Hierarchiczny" width="50%"></a>
+        </li>
+
+        <li>
+            <b>Sieciowy</b> - połączenia między dokumentami tworzą sieć. Informacja jest zawarta w dokumentach oraz w przebiegu połączeń sieci. <br>
+            <a href="modelSieciowy.png"><img src="modelSieciowy.png" alt="Wizualizacja modelu sieciowego." title="Model Sieciowy" width="50%"></a>
+        </li>
+
+        <li>
+            <b>Obiektowy</b> - model obiektowy łączy cechy programów komputerowych tworzonych w językach programowania obiektowego z cechami aplikacji bazodanowych. Obiekt w bazie reprezentuje obiekt w święcie rzeczywistym.
+        </li>
+
+        <li>
+            <b>Relacyjny</b> - w relacyjnym modelu baz danych informacja jest zapisywana w tabeli w formie wierszy. Tabele tworzą między sobą powiązanie zwane relacjami. <mark>Ze względu na funkcjonalność model relacyjny jest najczęściej wykorzystywany przy projektowaniu baz danych.</mark>
+        </li>
+    </ul>
+
+    <h3>Typy relacji: </h3>
+    <ul>
+        <li>
+            <b>Jeden do jednego: 1-1</b> <br>
+            Każdemu rekordowi w pierwszej tabeli może odpowiadać tylko jeden rekord z drugiej tabeli, a każdemu rekordowi z drugiej tabeli odpowiada dokładnie jeden rekord pierwszej tabeli.
+        </li>
+
+        <li>
+            <b>Jeden do wielu: 1-n</b> <br>
+            Każdemu rekordowi w pierwszej tabeli może odpowiadać wiele rekordów z drugiej tabeli, a każdemu rekordowi z drugiej tabeli odpowiada dokładnie jeden rekord z pierwszej tabeli. <br>
+            <b>ORAZ</b> <br>
+            Każdemu rekordowi w pierwszej tabeli może dopowiadać tylko jeden rokord z drugiej tabeli a jednemu rekordowi z drugiej tabeli może odpowiadać wiele rekordów z pierwszej tabeli.
+        </li>
+
+        <li>
+            <b>Wiele do wielu: n-n</b> <br>
+            Każdemu rekordowi w pierwszej tabeli może odpowiadać wiele rekordów z drugiej tabeli, i każdemu rekordowi z drugiej tabeli odpowiada wiele rekordów z pierwszej tabeli.
+        </li>
+    </ul>
+
+    
+</body>
+</html>

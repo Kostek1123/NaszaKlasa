@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relacyjne bazy danych</title>
+    <link rel="stylesheet" href="../../CSS/theme.css">
+</head>
+<body>
+    <h1>Relacyjne bazy danych</h1>
+
+    <hr>
+
+    <h3>Cechy relacyjnej bazy danych: </h3>
+    <ul>
+        <li>Trwałość danych 
+            <br>
+            Trwałość danych zapisanych w bazie jest podstawową cechą baz danych. Trwałość danych oznacza, że <mark>dane zostały zapisane w bazie w sposób nieulotny</mark>. <mark>Wszystkie współczesne systemy baz danych muszą spełniać ten wymóg</mark>. <mark>Trwałość danych jest niezależna od działania aplikacji oraz od platformy sprzętowej i programowej</mark>. Dane gromadzone w bazie danych są przechowywane w pamięci zewnętrznej (dyskowej, optycznej, taśmowej). <mark>Powinny one być przechowywane w pamięci tak długo, jak długo wymagają tego użytkownicy systemu baz danych</mark>.
+        </li>
+        <br><br>
+        <li>Integralność (poprawność) danych <br>
+            Integralność (spójność) danych oznacza, że dane muszą:
+            <ul>
+                <li>wiernie odzwierciedlać dane rzeczywiste,</li>
+
+                <li>spełniać ograniczenia nałożone przez użytkowników,</li>
+
+                <li>wykazywać brak anomalii wynikających ze współbieżnego dostępu do danych.</li>
+            </ul> 
+            <br>
+            Integralność bazy danych to także odporność na błędy i awarie wynikające z zawodności sprzętu i oprogramowania oraz odporność na błędy użytkowników.
+            <br>
+            Wyróżniamy dwa rodzaje integralności danych:
+            <ul>
+                <li>semantyczna — oznacza zgodność danych z rzeczywistością, czyli poprawność odwzorowania rzeczywistości;</li>
+
+                <li>bazowa — oznacza poprawność procesów zachodzących w bazie.</li>
+            </ul>
+            <br>
+            Na poziomie struktur bazy danych można wyróżnić następujące rodzaje integralności:
+            <ul>
+                <li>referencyjna — oznacza, że każdej wartości klucza obcego odpowiada dokładnie jedna wartość klucza podstawowego;</li>
+
+                <li>encji — oznacza, że każdy atrybut encji musi mieć określoną wartość;</li>
+
+                <li>atrybutu — oznacza, że wartość każdego atrybutu należy do jego dziedziny.</li>
+            </ul>
+        </li>
+        <br><br>
+        <li>Bezpieczeństwo danych
+            <br>
+            Bezpieczeństwo danych oznacza, że dostęp do bazy danych mają <mark>tylko jej użytkownicy identyfikowani unikalną nazwą (loginem) i hasłem</mark>. Ponadto <mark>każdy użytkownik posiada określone uprawnienia w bazie danych</mark>. Bezpieczeństwo danych oznacza również, że <mark>baza danych jest zabezpieczona przed awarią sprzętu lub oprogramowania.</mark>
+        </li>
+        <br><br>
+        <li>Współdzielenie danych
+            <br>
+            <mark>Współdzielenie danych oznacza, że istnieje możliwość równoczesnej pracy wielu użytkowników z tą samą bazą danych. Użytkownicy mogą też jednocześnie pracować z tym samym zbiorem danych</mark>. Skutkiem takiej pracy mogą być <mark>konflikty w dostępie do danych</mark>, gdy jeden użytkownik modyfikuje zbiór danych, a drugi próbuje ten sam zbiór odczytać lub zmodyfikować w inny sposób. <mark>W bazie danych muszą istnieć mechanizmy zapewniające poprawne rozwiązanie takich konfliktów</mark>.
+        </li>
+        <br><br>
+        <li>Abstrakcja danych
+            <br>
+            Baza danych zawiera <mark>pewien model rzeczywistości</mark>. Ale <mark>przechowywane są w niej tylko niektóre dane o obiektach</mark>. Powinny one opisywać <mark>wyłącznie istotne aspekty obiektów świata rzeczywistego</mark>. <mark>Baza danych to abstrakcyjny model pewnego wycinka rzeczywistości, a jej struktura powinna w poprawny sposób odzwierciedlać obiekty świata rzeczywistego i powiązania pomiędzy tymi obiektami</mark>.
+            <br>
+            Poziomy abstrakcji:
+            <ul>
+                <li><b>poziom wewnętrzny</b> -  określa sposób pamiętania danych,</li>
+
+                <li><b>poziom pojęciowy</b>- wyższy poziom abstrakcji danych. Definiuje dane oraz związki zachodzące między nimi,</li>
+
+                <li><b>poziom zewnętrzny</b> – najwyższy poziom abstrakcji danych. Opisuje sposób, w jaki dane są widziane przez użytkownika. Dla każdego użytkownika obraz danych definiuje się za pomocą schematu zewnętrznego. </li>
+            </ul>
+        </li>
+        <br><br>
+        <li>Niezależność danych
+            <br>
+            Niezależność danych polega na <mark>oddzieleniu danych od aplikacji, które używają tych danych</mark>. Niezależność danych może być rozpatrywana w dwóch aspektach:
+            <ul>
+                <li>Logiczna niezależność danych — niezależność danych widzianych przez użytkownika (przez jego aplikacje) od logicznej struktury bazy danych (schematu pojęciowego) oraz zmian tej struktury w czasie.</li>
+
+                <li>Fizyczna niezależność danych — niezależność logicznej struktury bazy danych (schematu pojęciowego) od sposobu przechowywania danych w pamięci zewnętrznej (na nośnikach zewnętrznych).</li>
+                <br>
+                <mark>We współczesnych bazach danych niezależność danych jest osiągana tylko częściowo.</mark>
+            </ul>
+        </li>
+        <br><br>
+        <li>Integracja danych
+            <br>
+            <mark>Integracja danych polega na zapewnieniu współpracy danych przechowywanych w różnych miejscach i obsługiwanych przez różne systemy</mark>. Często bazy danych fizycznie są umieszczane na różnych komputerach połączonych ze sobą w taki sposób, że użytkownik nie wie, iż dane, z którymi pracuje, pochodzą z różnych baz i komputerów. <mark>Zmiany zawartości bazy na jednym komputerze powinny być uwzględniane również na innych komputerach</mark>. <mark>Tak funkcjonujące bazy nazywamy rozproszonymi bazami danych</mark>. <mark>Bazy danych powinny być zaprojektowane tak, aby dane były zawsze dostępne, niezależnie od tego, gdzie i w jakiej postaci zostały zapisane i jak są przechowywane</mark>. Serwery bazodanowe powinny <mark>zapewniać integrację rozproszonych danych znajdujących się na wielu komputerach</mark>. Mechanizmy integracyjne dostępne na nich <mark>powinny działać w czasie rzeczywistym i współpracować z różnorodnymi bazami danych</mark>.
+        </li>
+    </ul>
+    <hr>
+    <h3>Typy danych</h3>
+    <p>Podczas tworzenia nowej kolumny w tabelach SQL, mamy do wyboru typ danych. Bardzo to przypomina sytuację, kiedy pisząc program w języku z silnym typowaniem deklarujemy typ zmiennej. Warto poznać typy danych w MySQL, ponieważ trafny wybór pozwala nam przechowywać dane w odpowiednim formacie co ułatwi ich obsługę, istotnie wpływa na wydajność wyprzypadku dużej skali i nakłada pewne ograniczenia.</p>
+    <br>
+    <a href="typyDanych.png"><img src="typyDanych.png" alt="typyDanych"></a>
+
+    <p>
+        <b>Tekstowe</b>
+        <br>
+        CHAR(długość) - Przechowuje łańcuchy znakowe o długości od 0 do 255 znaków. CHAR jest polem o stałej długości. <br>
+        VARCHAR(długość) - Przechowuje łańcuchy znakowe o zmiennej długości. Długość zmienia się w zależności od ilości znaków do przechowania. <br>
+        Przyrostek n pozwala nam wstawiać znaki narodowościowe    <br>
+        (UWAGA! Znak specjalny rezerwuje 2 bajty) <br>
+        NAZWISKO->Ząbek <br>
+        CHAR(10)-> ZabekXXXXX -> 10 bajtów <br>
+        VARCHAR(10)-> Zabek -> 5 bajtów <br>
+        nVARCHAR(10)-> Ząbek -> 6 bajtów <br>
+    </p>
+</body>
+</html>
