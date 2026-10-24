@@ -18,6 +18,14 @@ hr{
     height: 4px;
 }
 
+table, th, td{
+    border: 2px solid #221f51;
+}
+
+table{
+   background-color: #221f51; 
+}
+
 th, td{
     background-color: #090814;
     border-radius: 10px;
