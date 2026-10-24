@@ -92,7 +92,49 @@
     <h3>Typy danych</h3>
     <p>Podczas tworzenia nowej kolumny w tabelach SQL, mamy do wyboru typ danych. Bardzo to przypomina sytuację, kiedy pisząc program w języku z silnym typowaniem deklarujemy typ zmiennej. Warto poznać typy danych w MySQL, ponieważ trafny wybór pozwala nam przechowywać dane w odpowiednim formacie co ułatwi ich obsługę, istotnie wpływa na wydajność wyprzypadku dużej skali i nakłada pewne ograniczenia.</p>
     <br>
-    <a href="typyDanych.png"><img src="typyDanych.png" alt="typyDanych"></a>
+    <table width="40%">
+        <tr>
+            <th>Grupa</th>
+            <th>Typy w MS SQL</th>
+            <th>Typy w MySQL</th>
+        </tr>
+
+        <tr>
+            <td>Tekstowe</td>
+            <td>char(20); vachar(20); nchar(20); nvarchar(20)</td>
+            <td>char(20); varchar(20)</td>
+        </tr>
+
+        <tr>
+            <td>Liczbowe</td>
+            <td>int; smallint; bigint; tiny int; float; real; decimal(4,2); numeric(4,2)</td>
+            <td>int; smallint; bigint; tiny int; float; real; decimal; numeric</td>
+        </tr>
+
+        <tr>
+            <td>Data i Czas</td>
+            <td>date; datetime; time</td>
+            <td>date; datetime; timestamp; time</td>
+        </tr>
+
+        <tr>
+            <td>Binarne</td>
+            <td>binary; varbinary</td>
+            <td>binary; varbinary</td>
+        </tr>
+
+        <tr>
+            <td>Waluty</td>
+            <td>money; smallmoney</td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>Specjalne</td>
+            <td>text; image; bit</td>
+            <td>text; enum; bit; set.</td>
+        </tr>
+    </table>
 
     <p>
         <b>Tekstowe</b>
