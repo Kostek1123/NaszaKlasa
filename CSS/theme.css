@@ -23,7 +23,8 @@ table, th, td{
 }
 
 table{
-   background-color: #221f51; 
+   background-color: #221f51;
+   border-radius: 3px; 
 }
 
 th, td{
